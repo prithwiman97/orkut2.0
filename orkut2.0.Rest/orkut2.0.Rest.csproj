@@ -13,7 +13,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\orkut2.0.Application\orkut2.0.Application.csproj" />
-    <ProjectReference Include="..\orkut2.0.Contracts\orkut2.0.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

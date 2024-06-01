@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using orkut2._0.Application.Services;
-using orkut2._0.Contracts.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 

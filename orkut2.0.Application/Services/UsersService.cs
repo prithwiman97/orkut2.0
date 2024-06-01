@@ -1,4 +1,4 @@
-﻿using orkut2._0.Contracts.Models;
+﻿using orkut2._0.Application.Models;
 
 namespace orkut2._0.Application.Services
 {
