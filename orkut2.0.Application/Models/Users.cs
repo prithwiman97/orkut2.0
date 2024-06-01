@@ -1,4 +1,4 @@
-﻿namespace orkut2._0.Contracts.Models
+﻿namespace orkut2._0.Application.Models
 {
     public class Users
     {
