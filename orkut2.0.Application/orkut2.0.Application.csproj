@@ -1,18 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <RootNamespace>orkut2._0.Application</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>orkut2._0</RootNamespace>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\orkut2.0.Application\orkut2.0.Application.csproj" />
     <ProjectReference Include="..\orkut2.0.Contracts\orkut2.0.Contracts.csproj" />
   </ItemGroup>
 
