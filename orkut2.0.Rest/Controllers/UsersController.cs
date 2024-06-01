@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using orkut2._0.Application.Services;
 using orkut2._0.Contracts.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -9,11 +10,16 @@ namespace orkut2._0.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
+        private readonly IUsersService _usersService;
+        public UsersController(IUsersService usersService)
+        {
+            _usersService = usersService;
+        }
         // GET: api/<UsersController>
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            return Ok(new List<Users> { new() { Firstname = "Prithwiman", Lastname = "Mazumdar" } });
+            return Ok(await _usersService.GetUsersAsync());
         }
 
         // GET api/<UsersController>/5
